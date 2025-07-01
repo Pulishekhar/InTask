@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🔷 For InTask box glowing border animation */
+.glow-box {
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background: linear-gradient(#201a5c, #201a5c) padding-box,
+              linear-gradient(120deg, #ff00cc, #3333ff, #ffcc00) border-box;
+  background-size: 300% 300%;
+  animation: glowing-border 4s linear infinite;
+}
+
+
+
+@keyframes move-gradient {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
